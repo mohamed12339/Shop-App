@@ -1,5 +1,5 @@
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:e_commerce_v2/features/screens_navigationBar_layout/domian/model/entity/category.dart';
+import 'package:shop_app/features/screens_navigationBar_layout/domian/model/entity/category.dart';
 import 'package:flutter/material.dart';
 
 
@@ -11,7 +11,7 @@ class CategoryWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
+    return InkWell(
       onTap: () {
         // TODO: Implement category tap action
       },

@@ -1,11 +1,11 @@
-import 'package:e_commerce_v2/core/di/di.dart';
-import 'package:e_commerce_v2/features/auth/ui/login/cubit/login_cubit.dart';
-import 'package:e_commerce_v2/features/auth/ui/login/cubit/login_state.dart';
+import 'package:shop_app/core/di/di.dart';
+import 'package:shop_app/features/auth/ui/login/cubit/login_cubit.dart';
+import 'package:shop_app/features/auth/ui/login/cubit/login_state.dart';
 import 'package:flutter/material.dart';
-import 'package:e_commerce_v2/core/l10n/translations/app_localizations.dart';
-import 'package:e_commerce_v2/core/theme/app_colors.dart';
-import 'package:e_commerce_v2/core/utils/app_assets.dart';
-import 'package:e_commerce_v2/core/utils/validation.dart';
+import 'package:shop_app/core/l10n/translations/app_localizations.dart';
+import 'package:shop_app/core/theme/app_colors.dart';
+import 'package:shop_app/core/utils/app_assets.dart';
+import 'package:shop_app/core/utils/validation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../../core/routing/routes.dart';
 import '../../../../../core/utils/dialog_utills.dart';
@@ -40,7 +40,6 @@ class _LoginState extends State<Login> {
             Navigator.pop(context);
             showMessage(context , title: "Error"  , message: state.loginApi.getError.message , posButtonTitle: "ok" );
           }else if (state.loginApi.isLoading){
-            Navigator.pop(context);
             showLoading(context);
           }
         },
@@ -60,7 +59,7 @@ class _LoginState extends State<Login> {
                       Image.asset(AppImages.logo),
                        SizedBox(height: 40),
                       Text(
-                        AppLocalizations.of(context)!.welcomeBackToCommerceApp,
+                        AppLocalizations.of(context)!.welcomeBackToShopApp,
                         style: Theme.of(
                           context,
                         ).textTheme.headlineMedium!.copyWith(color: AppColors.white),
@@ -105,7 +104,6 @@ class _LoginState extends State<Login> {
                       onPressed: () {
                         if (formKey.currentState!.validate()) { ///ودا برضو نفس الكلام الي فوق : دا مهم جدا  دا الي بتسخدموا مع ال validation بتاع ال  textFromField وعشان يظهرللك الحاجة الحمرة دية الي بيقولك باسورد المفروض يتكتب كدا وهكزا
                          viewModel.login(emailController.text, passwordController.text);
-                         Navigator.pushNamed(context, Routes.navigationRoute);
                         }
                       },
                       style: ElevatedButton.styleFrom(backgroundColor: AppColors.white),

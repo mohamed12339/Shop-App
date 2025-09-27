@@ -104,11 +104,11 @@ abstract class AppLocalizations {
   /// **'Route'**
   String get appName;
 
-  /// No description provided for @welcomeBackToCommerceApp.
+  /// No description provided for @welcomeBackToShopApp.
   ///
   /// In en, this message translates to:
-  /// **'welcome Back to CommerceApp'**
-  String get welcomeBackToCommerceApp;
+  /// **'welcome Back to ShopApp'**
+  String get welcomeBackToShopApp;
 
   /// No description provided for @pleaseSignInWithYourMail.
   ///

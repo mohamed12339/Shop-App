@@ -1,6 +1,6 @@
-import 'package:e_commerce_v2/core/api_result/api_result.dart';
-import 'package:e_commerce_v2/features/products/ui/cubit/category_products_state.dart';
-import 'package:e_commerce_v2/features/screens_navigationBar_layout/domian/usecase/load_products_use_case.dart';
+import 'package:shop_app/core/api_result/api_result.dart';
+import 'package:shop_app/features/products/ui/cubit/category_products_state.dart';
+import 'package:shop_app/features/screens_navigationBar_layout/domian/usecase/load_products_use_case.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:injectable/injectable.dart';
 

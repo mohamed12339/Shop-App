@@ -1,5 +1,5 @@
-import 'package:e_commerce_v2/features/network/model/response/categories/categories_response.dart';
-import 'package:e_commerce_v2/features/network/model/response/products/products_response.dart';
+import 'package:shop_app/features/network/model/response/categories/categories_response.dart';
+import 'package:shop_app/features/network/model/response/products/products_response.dart';
 import '../../../../../core/api_result/api_result.dart';
 
 

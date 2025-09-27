@@ -1,6 +1,6 @@
 
-import 'package:e_commerce_v2/features/network/model/response/products/product_dm.dart';
-import 'package:e_commerce_v2/features/screens_navigationBar_layout/domian/model/entity/product.dart';
+import 'package:shop_app/features/network/model/response/products/product_dm.dart';
+import 'package:shop_app/features/screens_navigationBar_layout/domian/model/entity/product.dart';
 
 import 'package:injectable/injectable.dart';
 

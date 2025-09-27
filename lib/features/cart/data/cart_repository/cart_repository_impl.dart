@@ -1,8 +1,8 @@
-import 'package:e_commerce_v2/core/api_result/api_result.dart';
-import 'package:e_commerce_v2/features/cart/data/cart_repository/data_source/cart_remote_data_source.dart';
-import 'package:e_commerce_v2/features/cart/data/mapper/cart_mapper.dart';
-import 'package:e_commerce_v2/features/cart/domain/entities/cart.dart';
-import 'package:e_commerce_v2/features/cart/domain/repository/cart_repository.dart';
+import 'package:shop_app/core/api_result/api_result.dart';
+import 'package:shop_app/features/cart/data/cart_repository/data_source/cart_remote_data_source.dart';
+import 'package:shop_app/features/cart/data/mapper/cart_mapper.dart';
+import 'package:shop_app/features/cart/domain/entities/cart.dart';
+import 'package:shop_app/features/cart/domain/repository/cart_repository.dart';
 import 'package:injectable/injectable.dart';
 
 @Injectable(as: CartRepository) /// اهم حاجة انا مستخدم Injectable الي هيا بال I كدا عشان  دية انا عملتها عشان اقولوا لو طلبت abstract class دا   (as: CartRepository) دا ابعتلي child ال (CartRepositoryImpl) بتاعوا زي ال news كدا لما عملتها في get it فايل بالظبط  بس هنا بقا هايعملها لوحدوا generated

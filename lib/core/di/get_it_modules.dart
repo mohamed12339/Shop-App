@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:e_commerce_v2/core/shared_pref_helper/shared_pref_helper.dart';
+import 'package:shop_app/core/shared_pref_helper/shared_pref_helper.dart';
 import 'package:injectable/injectable.dart';
 import 'package:pretty_dio_logger/pretty_dio_logger.dart';
 

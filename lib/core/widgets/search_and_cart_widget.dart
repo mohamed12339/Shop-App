@@ -1,4 +1,4 @@
-import 'package:e_commerce_v2/core/routing/routes.dart';
+import 'package:shop_app/core/routing/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 

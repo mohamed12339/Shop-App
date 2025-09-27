@@ -1,6 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:e_commerce_v2/core/l10n/translations/app_localizations.dart';
-import 'package:e_commerce_v2/features/screens_navigationBar_layout/domian/model/entity/product.dart';
+import 'package:shop_app/core/l10n/translations/app_localizations.dart';
+import 'package:shop_app/features/screens_navigationBar_layout/domian/model/entity/product.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 

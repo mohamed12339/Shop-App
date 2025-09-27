@@ -1,10 +1,10 @@
-import 'package:e_commerce_v2/core/routing/routes.dart';
-import 'package:e_commerce_v2/core/utils/dialog_utills.dart';
-import 'package:e_commerce_v2/features/cart/presentation/cart_cubit/cart_cubit.dart';
-import 'package:e_commerce_v2/features/cart/presentation/cart_cubit/cart_state.dart';
-import 'package:e_commerce_v2/features/cart/presentation/screen/cart_screen.dart';
-import 'package:e_commerce_v2/features/products/ui/category_products/screens/category_products.dart';
-import 'package:e_commerce_v2/features/products/ui/category_products/screens/category_products_args.dart';
+import 'package:shop_app/core/routing/routes.dart';
+import 'package:shop_app/core/utils/dialog_utills.dart';
+import 'package:shop_app/features/cart/presentation/cart_cubit/cart_cubit.dart';
+import 'package:shop_app/features/cart/presentation/cart_cubit/cart_state.dart';
+import 'package:shop_app/features/cart/presentation/screen/cart_screen.dart';
+import 'package:shop_app/features/products/ui/category_products/screens/category_products.dart';
+import 'package:shop_app/features/products/ui/category_products/screens/category_products_args.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -44,7 +44,7 @@ abstract class AppRouter {   /// هنا بستخدم ال generate Routes دا �
     return MaterialPageRoute(
       builder: (_) => BlocListener<CartCubit, CartState>(
         listener: (context, state) {
-          if (state.cartApiState.isLoading) {
+          if (state.cartApiState.isLoading) { /// يعني هنا بقولوا اظهر ال loading لما تدوس علي زائد او ناقص كدا في كل ال carts كلها
             showLoading(context);
           } else {
             hideLoading(context);

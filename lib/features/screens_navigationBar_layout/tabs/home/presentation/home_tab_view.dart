@@ -1,8 +1,8 @@
-import 'package:e_commerce_v2/core/di/di.dart';
-import 'package:e_commerce_v2/features/screens_navigationBar_layout/tabs/home/presentation/cubit/home_tab_cubit.dart';
-import 'package:e_commerce_v2/features/screens_navigationBar_layout/tabs/home/presentation/cubit/home_tab_state.dart';
+import 'package:shop_app/core/di/di.dart';
+import 'package:shop_app/features/screens_navigationBar_layout/tabs/home/presentation/cubit/home_tab_cubit.dart';
+import 'package:shop_app/features/screens_navigationBar_layout/tabs/home/presentation/cubit/home_tab_state.dart';
 import 'package:flutter/material.dart';
-import 'package:e_commerce_v2/core/l10n/translations/app_localizations.dart';
+import 'package:shop_app/core/l10n/translations/app_localizations.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'widgets/advertisements_list.dart';
 import 'widgets/categories_list.dart';
@@ -19,7 +19,6 @@ class HomeTabView extends StatefulWidget {
 
 class _HomeTabViewState extends State<HomeTabView> {
   var homeCubit = getIt<HomeTabCubit>(); ///  انا عملت كدا عشان اعرف getit نوع الحاجة الي هاستخدمها لازم اكتب get it كدا عشان اعرف النوع الحاجة
-  GlobalKey loadingDialogKey = GlobalKey();
   @override
   void initState() { /// وهنا بقا عرفتوا ال ui اني جبت من get it كل الحاجات الي هاستخدمها والفانكشن كمان اهي بس تظهر اول لما تفتح ال screen دية  ودا ال initSTATE عشان كدا حطيتها فيها
     super.initState();

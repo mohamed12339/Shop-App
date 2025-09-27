@@ -1,5 +1,6 @@
+import 'package:shop_app/core/routing/routes.dart';
 import 'package:flutter/material.dart';
-import 'package:e_commerce_v2/core/l10n/translations/app_localizations.dart';
+import 'package:shop_app/core/l10n/translations/app_localizations.dart';
 
 class SectionTitle extends StatelessWidget {
   final String title;
@@ -22,7 +23,7 @@ class SectionTitle extends StatelessWidget {
               visible: viewAllVisibility ?? false,
               child: TextButton(
                 onPressed: () {
-                  // TODO: Implement view all action
+                 Navigator.push(context, Routes.categoryTab);
                 },
                 child: Text(
                   locale.viewAll,

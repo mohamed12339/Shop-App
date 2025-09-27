@@ -1,5 +1,5 @@
 
-import 'package:e_commerce_v2/features/network/model/response/products/product_dm.dart';
+import 'package:shop_app/features/network/model/response/products/product_dm.dart';
 
 class CartEntryDM { /// دا اتعمل مش با json serializable لا دا اتعمل ب plugin اسمو json to dart
   CartEntryDM({

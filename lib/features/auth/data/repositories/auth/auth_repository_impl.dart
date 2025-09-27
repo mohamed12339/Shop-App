@@ -1,11 +1,11 @@
 import 'package:dio/dio.dart';
-import 'package:e_commerce_v2/core/api_result/api_result.dart';
-import 'package:e_commerce_v2/core/shared_pref_helper/shared_pref_helper.dart';
-import 'package:e_commerce_v2/features/auth/data/repositories/auth/data_sources/auth_remote_data_source.dart';
-import 'package:e_commerce_v2/features/auth/domain/repositories/auth_repository.dart';
-import 'package:e_commerce_v2/features/network/model/request/login_request/login_request.dart';
-import 'package:e_commerce_v2/features/network/model/request/register_request/register_request.dart';
-import 'package:e_commerce_v2/features/network/model/response/token_request/token_response.dart';
+import 'package:shop_app/core/api_result/api_result.dart';
+import 'package:shop_app/core/shared_pref_helper/shared_pref_helper.dart';
+import 'package:shop_app/features/auth/data/repositories/auth/data_sources/auth_remote_data_source.dart';
+import 'package:shop_app/features/auth/domain/repositories/auth_repository.dart';
+import 'package:shop_app/features/network/model/request/login_request/login_request.dart';
+import 'package:shop_app/features/network/model/request/register_request/register_request.dart';
+import 'package:shop_app/features/network/model/response/token_request/token_response.dart';
 import 'package:injectable/injectable.dart';
 
 @Injectable(as: AuthRepository) /// وهنا نفس الكلام بتاع authRemoteDataSourceImpl اهم حاجة انا مستخدم Injectable الي هيا بال I كدا عشان  دية انا عملتها عشان اقولوا لو طلبت abstract class دا   (as: AuthRepository) دا ابعتلي child ال (AuthRepositoryImpl) بتاعوا زي ال news كدا لما عملتها في get it فايل بالظبط  بس هنا بقا هايعملها لوحدوا generated

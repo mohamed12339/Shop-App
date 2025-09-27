@@ -1,6 +1,6 @@
 
-import 'package:e_commerce_v2/core/api_result/api_result.dart';
-import 'package:e_commerce_v2/features/cart/domain/entities/cart.dart';
+import 'package:shop_app/core/api_result/api_result.dart';
+import 'package:shop_app/features/cart/domain/entities/cart.dart';
 
 class CartState { /// دا الـ state اللي هيحتفظ بالـ data والحالات (Initial, Loading, Success, Error) وهابتعها لل cubit
 

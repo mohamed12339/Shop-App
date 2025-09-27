@@ -1,11 +1,11 @@
-import 'package:e_commerce_v2/core/routing/routes.dart';
-import 'package:e_commerce_v2/core/theme/app_colors.dart';
-import 'package:e_commerce_v2/core/utils/app_assets.dart';
-import 'package:e_commerce_v2/features/products/ui/category_products/screens/category_products_args.dart';
+import 'package:shop_app/core/routing/routes.dart';
+import 'package:shop_app/core/theme/app_colors.dart';
+import 'package:shop_app/core/utils/app_assets.dart';
+import 'package:shop_app/features/products/ui/category_products/screens/category_products_args.dart';
 
-import 'package:e_commerce_v2/features/screens_navigationBar_layout/domian/model/entity/category.dart';
-import 'package:e_commerce_v2/features/screens_navigationBar_layout/tabs/categories/presentation/category_card_item.dart';
-import 'package:e_commerce_v2/features/screens_navigationBar_layout/tabs/categories/presentation/sub_category_item.dart';
+import 'package:shop_app/features/screens_navigationBar_layout/domian/model/entity/category.dart';
+import 'package:shop_app/features/screens_navigationBar_layout/tabs/categories/presentation/category_card_item.dart';
+import 'package:shop_app/features/screens_navigationBar_layout/tabs/categories/presentation/sub_category_item.dart';
 import 'package:flutter/material.dart';
 
 

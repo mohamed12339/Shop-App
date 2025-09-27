@@ -1,9 +1,9 @@
-import 'package:e_commerce_v2/core/api_result/api_result.dart';
-import 'package:e_commerce_v2/features/cart/data/cart_repository/data_source/cart_remote_data_source.dart';
-import 'package:e_commerce_v2/features/network/api/commerce_services.dart';
-import 'package:e_commerce_v2/features/network/model/request/cart/add_product_request.dart';
-import 'package:e_commerce_v2/features/network/model/request/cart/update_product_quantity_request.dart';
-import 'package:e_commerce_v2/features/network/model/response/cart/cart_response.dart';
+import 'package:shop_app/core/api_result/api_result.dart';
+import 'package:shop_app/features/cart/data/cart_repository/data_source/cart_remote_data_source.dart';
+import 'package:shop_app/features/network/api/commerce_services.dart';
+import 'package:shop_app/features/network/model/request/cart/add_product_request.dart';
+import 'package:shop_app/features/network/model/request/cart/update_product_quantity_request.dart';
+import 'package:shop_app/features/network/model/response/cart/cart_response.dart';
 import 'package:injectable/injectable.dart';
 
 @Injectable(as: CartRemoteDataSource) /// اهم حاجة انا مستخدم Injectable الي هيا بال I كدا عشان  دية انا عملتها عشان اقولوا لو طلبت abstract class دا   (as: CartRemoteDataSource) دا ابعتلي child ال (CartRemoteDataSourceImpl) بتاعوا زي ال news كدا لما عملتها في get it فايل بالظبط  بس هنا بقا هايعملها لوحدوا generated

@@ -1,6 +1,6 @@
-import 'package:e_commerce_v2/core/api_result/api_result.dart';
-import 'package:e_commerce_v2/features/cart/domain/repository/cart_repository.dart';
-import 'package:e_commerce_v2/features/cart/presentation/cart_cubit/cart_state.dart';
+import 'package:shop_app/core/api_result/api_result.dart';
+import 'package:shop_app/features/cart/domain/repository/cart_repository.dart';
+import 'package:shop_app/features/cart/presentation/cart_cubit/cart_state.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:injectable/injectable.dart';
 

@@ -1,6 +1,6 @@
-import 'package:e_commerce_v2/core/api_result/api_result.dart';
-import 'package:e_commerce_v2/features/auth/ui/login/cubit/login_state.dart';
-import 'package:e_commerce_v2/features/network/model/request/login_request/login_request.dart';
+import 'package:shop_app/core/api_result/api_result.dart';
+import 'package:shop_app/features/auth/ui/login/cubit/login_state.dart';
+import 'package:shop_app/features/network/model/request/login_request/login_request.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:injectable/injectable.dart';
 import '../../../domain/usecase/login_and_register_usecase.dart';

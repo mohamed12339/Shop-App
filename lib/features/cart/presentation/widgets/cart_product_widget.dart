@@ -1,7 +1,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:e_commerce_v2/core/l10n/translations/app_localizations.dart';
-import 'package:e_commerce_v2/features/cart/domain/entities/cart_entry.dart';
-import 'package:e_commerce_v2/features/cart/presentation/cart_cubit/cart_cubit.dart';
+import 'package:shop_app/core/l10n/translations/app_localizations.dart';
+import 'package:shop_app/features/cart/domain/entities/cart_entry.dart';
+import 'package:shop_app/features/cart/presentation/cart_cubit/cart_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:icons_plus/icons_plus.dart';

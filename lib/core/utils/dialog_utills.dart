@@ -1,10 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-bool isLoadingDialogVisible = false;
+bool isLoadingDialogVisible = false; /// دا هنا عشان ال loading يشتغل في ال app كلو بس عاملوا ب false امتي بقا ب true
 void showLoading(BuildContext context, {Key? key}) async {
-  if(isLoadingDialogVisible) return;
-  isLoadingDialogVisible = true;
+  if(isLoadingDialogVisible) return; /// هنا بقولوا لو ال laoding ظاهر علي الشاشة متكملش ومتظهرش loading تاني بس
+  isLoadingDialogVisible = true; /// يظهر ال loading  في حالة ال showLoading
   await showDialog(
       context: context,
       builder: (context) {
@@ -26,7 +26,7 @@ void showLoading(BuildContext context, {Key? key}) async {
 Future<void> hideLoading(BuildContext context) async{
   if(isLoadingDialogVisible){
     Navigator.pop(context);
-    isLoadingDialogVisible = false;
+    isLoadingDialogVisible = false; /// وهنا يخفي ال loading
   }
 }
 

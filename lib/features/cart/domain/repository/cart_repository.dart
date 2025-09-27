@@ -1,7 +1,7 @@
 
 
-import 'package:e_commerce_v2/core/api_result/api_result.dart';
-import 'package:e_commerce_v2/features/cart/domain/entities/cart.dart';
+import 'package:shop_app/core/api_result/api_result.dart';
+import 'package:shop_app/features/cart/domain/entities/cart.dart';
 
 abstract class CartRepository { /// هنا بقا دا مهمتوا اني اعرف api علي الحاجات الي هاستخدمها  وال هوا model  بس بتاعة ال domain
   Future<ApiResult<Cart>> getCart();  /// انا هنا بقولوا رجعلي apiResults عشان لو فية ايرور كدا فهل هيبقا success or error or loading or initial  وكمان هيا مش هترجع api result بس لا هترجعوا علي انو Cart ودية فايدة tempelete الي عملتها هناك في ال apiResult الانا عملتها هناك وبقولوا هات ال يقا ال cart

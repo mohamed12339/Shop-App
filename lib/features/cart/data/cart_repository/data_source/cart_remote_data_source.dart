@@ -1,7 +1,7 @@
 
 
-import 'package:e_commerce_v2/core/api_result/api_result.dart';
-import 'package:e_commerce_v2/features/network/model/response/cart/cart_response.dart';
+import 'package:shop_app/core/api_result/api_result.dart';
+import 'package:shop_app/features/network/model/response/cart/cart_response.dart';
 
 abstract class CartRemoteDataSource { /// دا الداتا الاونلاين دا هوا ال abstract الي مش هابعت فية الحاجة ال impl هوا الي هايبعت الحاجة
 

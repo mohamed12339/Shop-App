@@ -1,7 +1,7 @@
-import 'package:e_commerce_v2/features/screens_navigationBar_layout/domian/model/entity/category.dart';
-import 'package:e_commerce_v2/features/screens_navigationBar_layout/tabs/categories/presentation/category_item.dart';
-import 'package:e_commerce_v2/features/screens_navigationBar_layout/tabs/categories/presentation/cubit/categories_cubit.dart';
-import 'package:e_commerce_v2/features/screens_navigationBar_layout/tabs/categories/presentation/cubit/categories_state.dart';
+import 'package:shop_app/features/screens_navigationBar_layout/domian/model/entity/category.dart';
+import 'package:shop_app/features/screens_navigationBar_layout/tabs/categories/presentation/category_item.dart';
+import 'package:shop_app/features/screens_navigationBar_layout/tabs/categories/presentation/cubit/categories_cubit.dart';
+import 'package:shop_app/features/screens_navigationBar_layout/tabs/categories/presentation/cubit/categories_state.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../../core/theme/app_colors.dart';

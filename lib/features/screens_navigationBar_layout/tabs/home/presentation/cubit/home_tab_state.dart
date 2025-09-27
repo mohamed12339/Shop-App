@@ -1,5 +1,5 @@
-import 'package:e_commerce_v2/core/api_result/api_result.dart';
-import 'package:e_commerce_v2/features/screens_navigationBar_layout/domian/model/entity/category.dart';
+import 'package:shop_app/core/api_result/api_result.dart';
+import 'package:shop_app/features/screens_navigationBar_layout/domian/model/entity/category.dart';
 import '../../../../domian/model/entity/product.dart';
 
 class HomeTabState{ /// دا الـ state اللي هيحتفظ بالـ data والحالات (Initial, Loading, Success, Error) وهابتعها لل cubit

@@ -12,7 +12,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get appName => 'Route';
 
   @override
-  String get welcomeBackToCommerceApp => 'welcome Back to CommerceApp';
+  String get welcomeBackToShopApp => 'welcome Back to ShopApp';
 
   @override
   String get pleaseSignInWithYourMail => 'Please sign in with your mail';

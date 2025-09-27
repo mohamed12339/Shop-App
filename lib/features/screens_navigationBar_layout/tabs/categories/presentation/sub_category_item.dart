@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:e_commerce_v2/core/theme/app_colors.dart';
+import 'package:shop_app/core/theme/app_colors.dart';
 
 class SubCategoryItem extends StatelessWidget {
   final String title;
@@ -9,36 +9,39 @@ class SubCategoryItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
-      onTap: () {
-        onItemClick();
-      },
-      overlayColor: WidgetStateProperty.all(Colors.transparent),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          AspectRatio(
-            aspectRatio: 1,
-            child: Container(
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(12),
-                  border: Border.all(color: AppColors.blue, width: 2)),
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(10),
-                child: Image.asset(
-                  image,
-                  fit: BoxFit.cover,
+    return Material(
+       color: AppColors.white,
+      child: InkWell(
+        onTap: () {
+          onItemClick();
+        },
+        overlayColor: WidgetStateProperty.all(Colors.transparent),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            AspectRatio(
+              aspectRatio: 1,
+              child: Container(
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(12),
+                    border: Border.all(color: AppColors.blue, width: 2)),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(10),
+                  child: Image.asset(
+                    image,
+                    fit: BoxFit.cover,
+                  ),
                 ),
               ),
             ),
-          ),
-          Text(
-            title,
-            textAlign: TextAlign.center,
-            style: TextStyle(color: AppColors.blue, fontSize: 16),
-            maxLines: 1,
-          )
-        ],
+            Text(
+              title,
+              textAlign: TextAlign.center,
+              style: TextStyle(color: AppColors.blue, fontSize: 16),
+              maxLines: 1,
+            )
+          ],
+        ),
       ),
     );
   }

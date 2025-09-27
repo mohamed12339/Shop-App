@@ -1,9 +1,9 @@
-import 'package:e_commerce_v2/core/di/di.dart';
-import 'package:e_commerce_v2/core/widgets/custom_product_card.dart';
-import 'package:e_commerce_v2/features/products/ui/cubit/category_products_cubit.dart';
-import 'package:e_commerce_v2/features/products/ui/cubit/category_products_state.dart';
-import 'package:e_commerce_v2/features/screens_navigationBar_layout/domian/model/entity/product.dart';
-import 'package:e_commerce_v2/features/screens_navigationBar_layout/widgets/home_appbar.dart';
+import 'package:shop_app/core/di/di.dart';
+import 'package:shop_app/core/widgets/custom_product_card.dart';
+import 'package:shop_app/features/products/ui/cubit/category_products_cubit.dart';
+import 'package:shop_app/features/products/ui/cubit/category_products_state.dart';
+import 'package:shop_app/features/screens_navigationBar_layout/domian/model/entity/product.dart';
+import 'package:shop_app/features/screens_navigationBar_layout/widgets/home_appbar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -63,7 +63,7 @@ class _CategoryProductsState extends State<CategoryProducts> {
           return CustomProductCard(product: products[index]);
         },
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount( ///دي أهم حاجة، وهي اللي بتحدد تنسيق الاكونتات او الكروت مثلا شكل الأعمدة جنب بعض ولا تحت بعض كدا والمسافات
-            childAspectRatio: .7, /// نسبة من العرض إلى الارتفاع يعني الشكل كلو او الكونت كلو ياخد مساحة قد اية بس
+            childAspectRatio: .66, /// نسبة من العرض إلى الارتفاع يعني الشكل كلو او الكونت كلو ياخد مساحة قد اية بس
             crossAxisCount: 2, /// عدد الاكونتات الي هتتحط انا عامل اتنين عشان يبقوا جنب بعض
             mainAxisSpacing: 12, /// مسافة ما بين اكونت 1 واكونت 2 مثلا المسافة الي تحتيهم ببقا ما بينهم وما بين الاكونتين التانين تمم
             crossAxisSpacing: 12 /// نسبة من العرض إلى الارتفاع يعني الشكل كلو او الكونت كلو ياخد مساحة قد اية بس

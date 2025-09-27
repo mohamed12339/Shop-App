@@ -1,8 +1,8 @@
-import 'package:e_commerce_v2/features/cart/domain/entities/cart.dart';
-import 'package:e_commerce_v2/features/cart/domain/entities/cart_entry.dart';
-import 'package:e_commerce_v2/features/network/model/response/cart/cart_entry_dm.dart';
-import 'package:e_commerce_v2/features/network/model/response/cart/cart_response.dart';
-import 'package:e_commerce_v2/features/screens_navigationBar_layout/data/mappers/product_mapper.dart';
+import 'package:shop_app/features/cart/domain/entities/cart.dart';
+import 'package:shop_app/features/cart/domain/entities/cart_entry.dart';
+import 'package:shop_app/features/network/model/response/cart/cart_entry_dm.dart';
+import 'package:shop_app/features/network/model/response/cart/cart_response.dart';
+import 'package:shop_app/features/screens_navigationBar_layout/data/mappers/product_mapper.dart';
 import 'package:injectable/injectable.dart';
 
 @injectable ///  هنا بقا i صغيرة مش كابيتال عشان دا مش abstract class وهنا كتبها عشان getit تعملوا ما هيا دية package injectable بتعمل حاجة getit بس generated لوحدها مش هتكتبها زي ال news
@@ -29,8 +29,8 @@ class CartMapper {
   }
 
   CartEntry cartEntryDMToCartEntry(CartEntryDM cartEntry) { /// انا هنا بعرف ال cartEntryDm الحاجة بتاعة ال cartEntry وبقولوا دا الي هاستخدموا بس
-    var quantity = cartEntry.count ?? 0;
-    double price = cartEntry.price?.toDouble() ?? 0.0;
+    var quantity = cartEntry.count ?? 0; /// وعرفتوا الكمية عشان اخزنها بردوا CartEntry
+    double price = cartEntry.price?.toDouble() ?? 0.0;  /// وعرفتوا السعر عشان اخزنها بردوا في ال CartEntry
     var product = productMapper.fromDataModel(cartEntry.product!); /// هنا برضو بعرف ال product بتاع ال domain الانا هاستخدموا
     return CartEntry(
       product: product,

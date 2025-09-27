@@ -1,5 +1,5 @@
 
-import 'package:e_commerce_v2/features/network/model/response/categories/category_dm.dart';
+import 'package:shop_app/features/network/model/response/categories/category_dm.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 import '../common/meta_data/meta_data.dart';

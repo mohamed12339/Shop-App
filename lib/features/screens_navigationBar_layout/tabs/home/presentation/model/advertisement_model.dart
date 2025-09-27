@@ -1,5 +1,5 @@
-import 'package:e_commerce_v2/core/l10n/translations/app_localizations.dart';
-import 'package:e_commerce_v2/core/utils/app_assets.dart';
+import 'package:shop_app/core/l10n/translations/app_localizations.dart';
+import 'package:shop_app/core/utils/app_assets.dart';
 
 class AdvertisementModel {
   final String firstTitle;

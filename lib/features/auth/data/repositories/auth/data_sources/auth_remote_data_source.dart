@@ -1,5 +1,5 @@
-import 'package:e_commerce_v2/core/api_result/api_result.dart';
-import 'package:e_commerce_v2/features/network/model/response/token_request/token_response.dart';
+import 'package:shop_app/core/api_result/api_result.dart';
+import 'package:shop_app/features/network/model/response/token_request/token_response.dart';
 import '../../../../../network/model/request/login_request/login_request.dart';
 import '../../../../../network/model/request/register_request/register_request.dart';
 

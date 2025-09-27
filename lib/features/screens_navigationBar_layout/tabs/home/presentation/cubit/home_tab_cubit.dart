@@ -1,4 +1,4 @@
-import 'package:e_commerce_v2/features/screens_navigationBar_layout/tabs/home/presentation/cubit/home_tab_state.dart';
+import 'package:shop_app/features/screens_navigationBar_layout/tabs/home/presentation/cubit/home_tab_state.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:injectable/injectable.dart';
 import '../../../../../../core/api_result/api_result.dart';

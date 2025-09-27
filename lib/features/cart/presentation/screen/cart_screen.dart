@@ -1,8 +1,8 @@
-import 'package:e_commerce_v2/core/theme/app_colors.dart';
-import 'package:e_commerce_v2/features/cart/domain/entities/cart.dart';
-import 'package:e_commerce_v2/features/cart/presentation/cart_cubit/cart_cubit.dart';
-import 'package:e_commerce_v2/features/cart/presentation/cart_cubit/cart_state.dart';
-import 'package:e_commerce_v2/features/cart/presentation/widgets/checkout_section.dart';
+import 'package:shop_app/core/theme/app_colors.dart';
+import 'package:shop_app/features/cart/domain/entities/cart.dart';
+import 'package:shop_app/features/cart/presentation/cart_cubit/cart_cubit.dart';
+import 'package:shop_app/features/cart/presentation/cart_cubit/cart_state.dart';
+import 'package:shop_app/features/cart/presentation/widgets/checkout_section.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -46,9 +46,9 @@ class _CartScreenState extends State<CartScreen> {
                     ),
                   );
                 } else {
-                  if (state.latestCart != null) {
+                  if (state.latestCart != null) { /// هنا بقولوا لو فية cart موجودة اعرضها حتي لو انا loading
                     return buildCartView(state.latestCart!);
-                  } else {
+                  } else { ///لو مفيش خلاص اعرض CircularProgressIndicator
                     return Center(child: CircularProgressIndicator());
                   }
                 }

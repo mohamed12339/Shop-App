@@ -1,9 +1,9 @@
 import 'package:dio/dio.dart';
-import 'package:e_commerce_v2/features/network/api/commerce_services.dart';
-import 'package:e_commerce_v2/features/network/model/response/categories/categories_response.dart';
-import 'package:e_commerce_v2/features/network/model/response/products/products_response.dart';
+import 'package:shop_app/features/network/api/commerce_services.dart';
+import 'package:shop_app/features/network/model/response/categories/categories_response.dart';
+import 'package:shop_app/features/network/model/response/products/products_response.dart';
 
-import 'package:e_commerce_v2/features/screens_navigationBar_layout/data/home_repository/data_source/home_remote_data_source.dart';
+import 'package:shop_app/features/screens_navigationBar_layout/data/home_repository/data_source/home_remote_data_source.dart';
 import 'package:injectable/injectable.dart';
 import '../../../../../core/api_result/api_result.dart';
 

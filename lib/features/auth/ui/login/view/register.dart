@@ -1,10 +1,10 @@
-import 'package:e_commerce_v2/core/di/di.dart';
-import 'package:e_commerce_v2/features/auth/ui/login/cubit/register_cubit.dart';
+import 'package:shop_app/core/di/di.dart';
+import 'package:shop_app/features/auth/ui/login/cubit/register_cubit.dart';
 import 'package:flutter/material.dart';
-import 'package:e_commerce_v2/core/l10n/translations/app_localizations.dart';
-import 'package:e_commerce_v2/core/theme/app_colors.dart';
-import 'package:e_commerce_v2/core/utils/app_assets.dart';
-import 'package:e_commerce_v2/core/utils/validation.dart';
+import 'package:shop_app/core/l10n/translations/app_localizations.dart';
+import 'package:shop_app/core/theme/app_colors.dart';
+import 'package:shop_app/core/utils/app_assets.dart';
+import 'package:shop_app/core/utils/validation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../../core/routing/routes.dart';
 import '../../../../../core/utils/dialog_utills.dart';
@@ -71,7 +71,7 @@ class _RegisterState extends State<Register> {
                       Image.asset(AppImages.logo),
                       SizedBox(height: 20),
                       Text(
-                        AppLocalizations.of(context)!.welcomeBackToCommerceApp,
+                        AppLocalizations.of(context)!.welcomeBackToShopApp,
                         style: Theme.of(
                           context,
                         ).textTheme.headlineMedium!.copyWith(color: AppColors.white),

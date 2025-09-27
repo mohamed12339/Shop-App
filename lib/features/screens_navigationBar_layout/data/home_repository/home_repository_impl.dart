@@ -1,12 +1,12 @@
-import 'package:e_commerce_v2/core/api_result/api_result.dart';
-import 'package:e_commerce_v2/features/network/model/response/categories/categories_response.dart';
-import 'package:e_commerce_v2/features/network/model/response/products/products_response.dart';
-import 'package:e_commerce_v2/features/screens_navigationBar_layout/data/home_repository/data_source/home_remote_data_source.dart';
-import 'package:e_commerce_v2/features/screens_navigationBar_layout/data/mappers/category_mapper.dart';
-import 'package:e_commerce_v2/features/screens_navigationBar_layout/data/mappers/product_mapper.dart';
-import 'package:e_commerce_v2/features/screens_navigationBar_layout/domian/model/entity/category.dart';
-import 'package:e_commerce_v2/features/screens_navigationBar_layout/domian/model/entity/product.dart';
-import 'package:e_commerce_v2/features/screens_navigationBar_layout/domian/repository/home_repository.dart';
+import 'package:shop_app/core/api_result/api_result.dart';
+import 'package:shop_app/features/network/model/response/categories/categories_response.dart';
+import 'package:shop_app/features/network/model/response/products/products_response.dart';
+import 'package:shop_app/features/screens_navigationBar_layout/data/home_repository/data_source/home_remote_data_source.dart';
+import 'package:shop_app/features/screens_navigationBar_layout/data/mappers/category_mapper.dart';
+import 'package:shop_app/features/screens_navigationBar_layout/data/mappers/product_mapper.dart';
+import 'package:shop_app/features/screens_navigationBar_layout/domian/model/entity/category.dart';
+import 'package:shop_app/features/screens_navigationBar_layout/domian/model/entity/product.dart';
+import 'package:shop_app/features/screens_navigationBar_layout/domian/repository/home_repository.dart';
 import 'package:injectable/injectable.dart';
 
 @Injectable(as: HomeRepository)  /// اهم حاجة انا مستخدم Injectable الي هيا بال I كدا عشان  دية انا عملتها عشان اقولوا لو طلبت abstract class دا   (as: MovieDetailsRepository) دا ابعتلي child ال (MovieDetailsRepositoryImpl) بتاعوا زي ال news كدا لما عملتها في get it فايل بالظبط  بس هنا بقا هايعملها لوحدوا generated

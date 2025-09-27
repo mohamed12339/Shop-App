@@ -1,11 +1,11 @@
-import 'package:e_commerce_v2/features/cart/presentation/cart_cubit/cart_cubit.dart';
+import 'package:shop_app/features/cart/presentation/cart_cubit/cart_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
-import 'package:e_commerce_v2/core/l10n/translations/app_localizations.dart';
-import 'package:e_commerce_v2/core/routing/app_router.dart';
-import 'package:e_commerce_v2/core/routing/routes.dart';
-import 'package:e_commerce_v2/core/theme/app_theme.dart';
+import 'package:shop_app/core/l10n/translations/app_localizations.dart';
+import 'package:shop_app/core/routing/app_router.dart';
+import 'package:shop_app/core/routing/routes.dart';
+import 'package:shop_app/core/theme/app_theme.dart';
 import 'core/di/di.dart';
 import 'core/shared_pref_helper/shared_pref_helper.dart';
 
@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "E-Commerce-App",
+      title: "Shop-App",
       themeMode: ThemeMode.light,
       debugShowCheckedModeBanner: false,
       localizationsDelegates: AppLocalizations.localizationsDelegates,
